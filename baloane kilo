@@ -1,0 +1,24 @@
+#include <fstream>
+
+using namespace std;
+
+ifstream cin("baloane.in");
+ofstream cout("baloane.out");
+long long nr;
+long long n,balon;
+int main()
+{
+	
+    cin>>n;
+    n=2*n-1;
+    while(n)
+    {
+        cin>>nr;
+        balon^=nr;
+        n--;
+    }
+    cout<<balon;
+    //a XOR a =0 
+    //0 XOR a =a  
+    return 0;
+}
